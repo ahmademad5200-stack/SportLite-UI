@@ -54,65 +54,128 @@
                 <div>
                     <label class="block text-sm mb-2 mr-1 text-right">الاسم الكامل</label>
                     <input type="text" placeholder="ادخل اسمك هنا"
-                        class="w-full bg-[#2C2C2C] border border-transparent rounded-lg p-3 text-right hover:border-[#FF9500] transition outline-none">
+                        class="w-full min-h-53 bg-[#2C2C2C] border border-transparent rounded-lg p-3 text-right hover:border-[#FF9500] transition outline-none">
                 </div>
                 <div>
                     <label class="block text-sm mb-2 mr-1 text-right">البريد الإلكتروني</label>
                     <input type="email" placeholder="example@domain.com"
-                        class="w-full bg-[#2C2C2C] border border-transparent rounded-lg p-3 text-right hover:border-[#FF9500] transition outline-none">
+                        class="w-full min-h-53 bg-[#2C2C2C] border border-transparent rounded-lg p-3 text-right hover:border-[#FF9500] transition outline-none">
                 </div>
                 <div>
                     <label class="block text-sm mb-2 mr-1 text-right">رقم الهاتف</label>
                     <input type="text" placeholder="(+963) 0933333333"
-                        class="w-full bg-[#2C2C2C] border border-transparent rounded-lg p-3 text-right hover:border-[#FF9500] transition outline-none">
+                        class="w-full min-h-53  bg-[#2C2C2C] border border-transparent rounded-lg p-3 text-right hover:border-[#FF9500] transition outline-none">
                 </div>
                 <div>
                     <label for="notes" class="block text-sm mb-2 mr-1 text-right">الموضوع</label>
                     <textarea name="notes" id="notes" rows="5"
                         class="w-full bg-[#2C2C2C] border border-transparent rounded-lg p-3 text-right hover:border-[#FF9500] transition outline-none"></textarea>
                 </div>
-                <button type="submit" class="bg-[#DA6425] text-white p-3 rounded-full w-full font-bold hover:scale-105 transition-transform mt-4">
+                <button type="submit" class="bg-[#DA6425] h-[38] w-[55px] text-white p-3 rounded-full w-full font-bold hover:scale-105 transition-transform mt-4">
                     إرسال
                 </button>
             </form>
         </div>
 
-        <div class="w-500 md:w-1/3 flex flex-col items-center">
+        <div class="w-500 md:w-1/3 flex flex-col items-center relative">
             
-            <div class="bg-[#2C2C2C] p-8 rounded-xl w-full m-6 p-0" >
+            <div class="bg-[#2C2C2C] p-8 rounded-xl w-full max-h-[412px] m-6 p-22 gap-[30px]  absolute -bottom-5 -right-0" >
                 <h2 class="text-xl text-[#D56D34] font-bold mb-6 border-b border-gray-700 pb-2 text-right">معلومات التواصل</h2>
                 <ul class="space-y-6">
-                    <li class="flex items-center gap-4">
-                        <i class="fa-solid fa-location-dot text-[#D56D34] w-6 text-center text-lg"></i>
-                        <span class="text-white">سوريا، حلب، المحافظة</span>
+                    <li class="flex items-center gap-30">
+                        <i class="fa-solid fa-location-dot text-[#FF9500] w-6 text-center text-lg"></i>
+                        <span class="text-[#DA6425]">سوريا، حلب، المحافظة</span>
                     </li>
                     <li class="flex items-center gap-4">
-                        <i class="fa-solid fa-phone text-[#D56D34] w-6 text-center text-lg"></i>
-                        <span class="text-white" dir="ltr">0963 933333333</span>
+                        <i class="fa-solid fa-phone text-[#FF9500] w-6 text-center text-lg"></i>
+                        <span class="text-[#DA6425]" dir="ltr">0963 933333333</span>
                     </li>
                     <li class="flex items-center gap-4">
-                        <i class="fa-solid fa-envelope text-[#D56D34] w-6 text-center text-lg"></i>
-                        <span class="text-white">SportsLite@gmail.com</span>
+                        <i class="fa-solid fa-envelope text-[#FF9500] w-6 text-center text-lg"></i>
+                        <span class="text-[#DA6425]">SportsLite@gmail.com</span>
                     </li>
                     <li class="flex items-center gap-4">
-                        <i class="fa-solid fa-clock text-[#D56D34] w-6 text-center text-lg"></i>
-                        <span class="text-white">من 8 صباحاً حتى 6 مساءً</span>
+                        <i class="fa-solid fa-clock text-[#FF9500] w-6 text-center text-lg"></i>
+                        <span class="text-[#DA6425]">من 8 صباحاً حتى 6 مساءً</span>
                     </li>
                 </ul>
             </div>
-            <div class="flex items-center justify-center gap-6 mt-8">
-                <a href="#" class="text-[#FF9500] text-2xl hover:scale-110 transition"><i class="fa-brands fa-youtube "></i></a>
-                <a href="#" class="text-[#FF9500] text-2xl hover:scale-110 transition"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="text-[#FF9500] text-2xl hover:scale-110 transition"><i class="fa-brands fa-x-twitter"></i></a>
-               <a href="#" class="text-[#FF9500] text-2xl hover:scale-110 transition rounded-sm"><i class="fa-brands fa-square-facebook"></i></a>
+          <div class=" gap-8  mt-16  w-max-[293px] max-h-[40px] ">
+                <a href="#" class="text-center text-[#FF9500] p-2 m-2 text-2xl hover:scale-110 transition"><i class="fa-brands fa-youtube  max-w-24 h-24 rounded-[2px] "></i></a>
+                <a href="#" class= " text-center text-[#FF9500] p-2 m-2 text-2xl hover:scale-110 transition"><i class="fa-brands fa-instagram max-w-24 h-24 rounded-[2px]"></i></a>
+                <a href="#" class="text-center text-[#FF9500]  p-2 m-2 text-2xl hover:scale-110 transition"><i class="fa-brands fa-x-twitter max-w-24 h-24 rounded-[2px]"></i></a>
+               <a href="#" class="text-center text-[#FF9500]  p-2 m-2 text-2xl hover:scale-110 transition rounded-sm"><i class="fa-brands fa-square-facebook max-w-24 h-24 rounded-[2px]"></i></a>
             </div>
         </div>
     </div>
 </div>
-    <div class="">
- <div class="  w-full h-[600px] bg-cover bg-center bg-[url('')] flex flex-row items-center justify-center"></div>
-<img src="images/" alt="">
+    <div>
+<div class="w-full min-h-[550px] bg-cover bg-center bg-[url('images/photo_2026-05-10_18-19-07.jpg')] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-10 text-right items-start " dir="rtl">
+    <div class="min-w-[232px] h-[354px] ">
+  <h1 class="text-[#D56D34] font-bold mb-4  text-right " >معلومات تواصل</h1>
+  
+   <ul class="space-y-6">
+                    <li class="flex items-center gap-4">
+                        <i class="fa-solid fa-location-dot text-[#FF9500] w-6 text-center text-lg"></i>
+                        <span class="text-[#DA6425]">سوريا، حلب، المحافظة</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <i class="fa-solid fa-phone text-[#FF9500]   text-center text-lg"></i>
+                        <span class="text-[#DA6425]" dir="ltr">0963 933333333</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <i class="fa-solid fa-envelope text-[#FF9500] w-6 text-center text-lg"></i>
+                        <span class="text-[#DA6425]">SportsLite@gmail.com</span>
+                    </li>
+                   
+                </ul>
+                <div class=" gap-6  mt-16 ">
+                <a href="#" class="text-[#FF9500] p-2 m-2 text-2xl hover:scale-110 transition"><i class="fa-brands fa-youtube  max-w-24 h-24 rounded-[2px] "></i></a>
+                <a href="#" class="text-[#FF9500] p-2 m-2 text-2xl hover:scale-110 transition"><i class="fa-brands fa-instagram max-w-24 h-24 rounded-[2px]"></i></a>
+                <a href="#" class="text-[#FF9500]  p-2 m-2 text-2xl hover:scale-110 transition"><i class="fa-brands fa-x-twitter max-w-24 h-24 rounded-[2px]"></i></a>
+               <a href="#" class="text-[#FF9500]  p-2 m-2 text-2xl hover:scale-110 transition rounded-sm"><i class="fa-brands fa-square-facebook max-w-24 h-24 rounded-[2px]"></i></a>
+            </div>
+ </div>
+<div class=" gap-30   min-w-[232px] h-[354px] ">
+    <h1 class="text-[#D56D34] font-bold mb-4   " >الدعم و التواصل</h1>
+<ul class="space-y-6">
+    <li class="mb-5"><span class="text-[#DA6425]">سياسة الخصوصية</span></li>
+    <li class="mb-5"><span class="text-[#DA6425]">الاسئلة الشائعة</span></li>
+    <li class="mb-5"><span class="text-[#DA6425]">الشروط والأحكام</span></li>
+    <li class="mb-5"><span class="text-[#DA6425]">تواصل معنا</span></li>
+</ul>
+</div>
+
+<div class="gap-[30px]   min-w-[232px] h-[354px]">
+    <h1 class="text-[#D56D34] font-bold mb-4  pace-y-6  " >الروابط السريعة</h1>
+    <ul class="space-y-6">
+        <li><span class="text-[#DA6425]">الرئيسية</span></li>
+        <li><span class="text-[#DA6425]">البرامج</span></li>
+        <li><span class="text-[#DA6425]">المدربين</span></li>
+        <li><span class="text-[#DA6425]">الاخبار</span></li>
+    </ul>
+</div>
+ <div class="flex flex-col items-end  gap-2  md:order-3 max-[89px] h-[28px]">
+            <div class="flex items-center gap-3">
+                <div class="text-right">
+                    <a href="#" class="text-[#fff] font-bold text-lg md:text-xl">Sport <span
+                            class="text-[#FF9500]">Lite</span></a>
+                </div>
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-[#DA6425] rounded-sm"></div>
+            </div>
+
+            <p class="text-end text-[#fff]  md:text-sm opacity-80">Transform Your Body</p>
+    <p class="text-[#fff] max-w-[190px] max-h-[131] text-gray-300 leading-relaxed mt-16 text-jutify leading-relaxed  font-bold text-right">أكثر من مجرد نادي رياضي، نحن مجتمع يهتم بصحتك وقوتك. </p>
+            
+        </div>
+        
+ </div>
+ 
+<div class="bg-[#121212] w-[257] h-[30px] ">
+<p class="text-[#FF9500] text-center ">2026 جميع الحقوق محفوظة Sports Lite</p>
+</div>
     </div>
+    
 </body>
 <script src="scripts/api/messages-api.js"></script>
 <script src="scripts/ui/contact.js"></script>
