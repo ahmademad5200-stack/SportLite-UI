@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trainingProgram</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/trainingProgram.css">
+</head>
+<body class="bg-[#121212] font-tajawal overflow-x-hidden w-full relative">
+    <div id="header"></div>
+
+    <div class="w-full bg-[#121212] py-12 flex items-center justify-center gap-3 sm:gap-6 px-4" dir="rtl">
+        <div class="h-[2px] flex-shrink w-12 sm:w-32 md:w-64 lg:w-80 bg-gradient-to-r from-[#FF5900] to-transparent rounded-full"></div>
+        <h2 class="text-white text-xl sm:text-2xl md:text-3xl font-bold whitespace-nowrap">
+            البرامج التدريبية
+        </h2>
+        <div class="h-[2px] flex-shrink w-12 sm:w-32 md:w-64 lg:w-80 bg-gradient-to-l from-[#FF5900] to-transparent rounded-full"></div>
+    </div>
+
+    <div class="relative w-full max-w-6xl mx-auto overflow-visible">
+        
+        <div id="slider" class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar gap-8 pt-10 pb-20 px-10">
+            
+            <div class="card-item snap-center shrink-0 w-[280px] sm:w-[320px] lg:w-80 bg-[#242424] border-2 border-[#FF5900] rounded-[30px] p-8 flex flex-col items-center text-center shadow-right-bottom transition-transform duration-300">
+                <h2 class="text-white text-2xl font-bold mb-10">خسارة الوزن</h2>
+                
+                <div class="flex flex-col gap-8 w-full items-center mb-10">
+                    <div class="flex items-center gap-4 text-white">
+                        <i class="fa-regular fa-clock text-2xl"></i>
+                        <span class="text-lg font-medium">12 اسبوع</span>
+                    </div>
+                    <p class="text-white text-base">سكوت / بنش / تمارين بطن</p>
+                    <div class="flex items-center gap-4 text-white">
+                        <i class="fa-solid fa-dumbbell text-2xl"></i>
+                        <span class="text-lg font-medium">3 جلسات اسبوعياً</span>
+                    </div>
+                </div>
+                
+                <button class="w-full bg-[#FF5900] text-white py-3 rounded-full font-bold text-lg hover:bg-orange-600 shadow-lg">ابدأ الأن</button>
+            </div>
+
+            <div class="card-item snap-center shrink-0 w-[280px] sm:w-[320px] lg:w-80 bg-[#242424] border-2 border-[#FF5900] rounded-[30px] p-8 flex flex-col items-center text-center shadow-bottom transition-transform duration-300">
+                <h2 class="text-white text-2xl font-bold mb-10">خسارة الوزن</h2>
+                
+                <div class="flex flex-col gap-8 w-full items-center mb-10">
+                    <div class="flex items-center gap-4 text-white">
+                        <i class="fa-regular fa-clock text-2xl"></i>
+                        <span class="text-lg font-medium">12 اسبوع</span>
+                    </div>
+                    <p class="text-white text-base">سكوت / بنش / تمارين بطن</p>
+                    <div class="flex items-center gap-4 text-white">
+                        <i class="fa-solid fa-dumbbell text-2xl"></i>
+                        <span class="text-lg font-medium">3 جلسات اسبوعياً</span>
+                    </div>
+                </div>
+                
+                <button class="w-full bg-[#FF5900] text-white py-3 rounded-full font-bold text-lg hover:bg-orange-600 shadow-lg">ابدأ الأن</button>
+            </div>
+
+            <div class="card-item snap-center shrink-0 w-[280px] sm:w-[320px] lg:w-80 bg-[#242424] border-2 border-[#FF5900] rounded-[30px] p-8 flex flex-col items-center text-center shadow-left-bottom transition-transform duration-300">
+                <h2 class="text-white text-2xl font-bold mb-10">خسارة الوزن</h2>
+                
+                <div class="flex flex-col gap-8 w-full items-center mb-10">
+                    <div class="flex items-center gap-4 text-white">
+                        <i class="fa-regular fa-clock text-2xl"></i>
+                        <span class="text-lg font-medium">12 اسبوع</span>
+                    </div>
+                    <p class="text-white text-base">سكوت / بنش / تمارين بطن</p>
+                    <div class="flex items-center gap-4 text-white">
+                        <i class="fa-solid fa-dumbbell text-2xl"></i>
+                        <span class="text-lg font-medium">3 جلسات اسبوعياً</span>
+                    </div>
+                </div>
+                
+                <button class="w-full bg-[#FF5900] text-white py-3 rounded-full font-bold text-lg hover:bg-orange-600 shadow-lg">ابدأ الأن</button>
+            </div>
+
+        </div>
+
+        <div class="flex items-center justify-center gap-6 mt-4">
+            <button id="prev-btn" class="text-[#FF5900] text-2xl hover:text-white transition-colors cursor-pointer px-4">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            
+            <div class="flex gap-4 text-xl font-bold" id="pagination-dots">
+                <button class="dot text-white cursor-pointer" data-index="0">1</button>
+                <button class="dot text-gray-600 cursor-pointer" data-index="1">2</button>
+                <button class="dot text-gray-600 cursor-pointer" data-index="2">3</button>
+            </div>
+            
+            <button id="next-btn" class="text-[#FF5900] text-2xl hover:text-white transition-colors cursor-pointer px-4">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+
+    <script src="scripts/ui/footer.js"></script>
+    <script src="scripts/ui/header.js"></script>
+    <script src="scripts/api/trainee-programs-api.js"></script>
+    <script src="scripts/ui/trainingProgram.js"></script>
+</body>
+</html>

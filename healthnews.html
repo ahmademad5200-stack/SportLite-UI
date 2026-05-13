@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,125 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
-    
+<body class="bg-[#121212] font-tajawal overflow-x-hidden w-full relative">
 
+    <div id="header"></div>
+    
+    <div class="w-full bg-[#121212] py-12 flex items-center justify-center gap-3 sm:gap-6 px-4" dir="rtl">
+        <div class="h-[2px] flex-shrink w-12 sm:w-32 md:w-64 lg:w-80 bg-gradient-to-r from-[#FF5900] to-transparent rounded-full"></div>
+        <h2 class="text-white text-xl sm:text-2xl md:text-3xl font-bold whitespace-nowrap">
+            أخبار الصحة والتغذية
+        </h2>
+        <div class="h-[2px] flex-shrink w-12 sm:w-32 md:w-64 lg:w-80 bg-gradient-to-l from-[#FF5900] to-transparent rounded-full"></div>
+    </div>
+
+    <div class="w-full max-w-[1200px] mx-auto px-4 md:px-8 py-2 flex flex-col items-center">
+        
+        <h1 class="text-white text-xl md:text-3xl lg:text-4xl font-bold text-center leading-relaxed md:leading-snug max-w-3xl mb-8">
+            أحدث المقالات والنصائح الصحية والتغذوية لمساعدتك على تحسين نمط حياتك، وتعزيز لياقتك، واتخاذ خيارات غذائية أفضل.
+        </h1>
+
+        <div id="filter-buttons" class="flex flex-wrap md:flex-nowrap w-full max-w-4xl border border-[#FF5900] rounded-lg overflow-hidden mb-12">
+            <button data-filter="workout" class="filter-btn flex-1 px-2 py-3 text-[#FF5900] hover:bg-[#FF5900]/10 transition border-l border-[#FF5900] text-sm md:text-base font-medium whitespace-nowrap">
+                تمارين
+            </button>
+            <button data-filter="lifestyle" class="filter-btn flex-1 px-2 py-3 text-[#FF5900] hover:bg-[#FF5900]/10 transition border-l border-[#FF5900] text-sm md:text-base font-medium whitespace-nowrap">
+                نمط حياة
+            </button>
+            <button data-filter="diet" class="filter-btn flex-1 px-2 py-3 text-[#FF5900] hover:bg-[#FF5900]/10 transition border-l border-[#FF5900] text-sm md:text-base font-medium whitespace-nowrap">
+                برامج غذائية
+            </button>
+            <button data-filter="health" class="filter-btn flex-1 px-2 py-3 text-[#FF5900] hover:bg-[#FF5900]/10 transition border-l border-[#FF5900] text-sm md:text-base font-medium whitespace-nowrap">
+                صحة عامة
+            </button>
+            <button data-filter="nutrition" class="filter-btn flex-1 px-2 py-3 text-[#FF5900] hover:bg-[#FF5900]/10 transition border-l border-[#FF5900] text-sm md:text-base font-medium whitespace-nowrap">
+                تغذية
+            </button>
+            <button data-filter="all" class="filter-btn flex-1 px-2 py-3 bg-[#FF5900] text-white font-bold text-sm md:text-base whitespace-nowrap shadow-inner">
+                الكل
+            </button>
+        </div>
+
+        <div class="relative w-full h-[300px] md:h-[450px] lg:h-[500px] rounded-2xl overflow-hidden mb-6 group cursor-pointer shadow-xl">
+            <img src="images/diet-plan-fruit-salad.jpg" alt="سلطة الفواكة" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-black/50 to-transparent flex flex-col justify-end items-center pb-8 md:pb-12 text-center px-4">
+                <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-3 drop-shadow-md">سلطة الفواكة مع التوت البري</h2>
+                <p class="text-gray-200 text-sm md:text-lg lg:text-xl font-medium">ثورة غذائية جديدة تعزز الطاقة وتحسن الأداء الرياضي...</p>
+            </div>
+        </div>
+
+        <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-12">
+            
+            <div data-category="nutrition" class="article-card relative w-full h-[220px] md:h-[280px] rounded-2xl overflow-hidden group cursor-pointer shadow-lg border border-gray-800 transition-all duration-500">
+                <img src="images/diet-plan-fruit-salad.jpg" alt="سلطة الفواكة" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-black/60 to-transparent flex flex-col justify-end items-center pb-6 text-center px-4">
+                    <h3 class="text-lg md:text-2xl font-bold text-white mb-2">سلطة الفواكة مع التوت البري</h3>
+                    <p class="text-gray-300 text-xs md:text-sm">ثورة غذائية جديدة تعزز الطاقة وتحسن الأداء الرياضي.</p>
+                </div>
+            </div>
+
+            <div data-category="workout" class="article-card relative w-full h-[220px] md:h-[280px] rounded-2xl overflow-hidden group cursor-pointer shadow-lg border border-gray-800 transition-all duration-500">
+                <img src="images/diet-plan-fruit-salad.jpg" alt="سلطة الفواكة" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-black/60 to-transparent flex flex-col justify-end items-center pb-6 text-center px-4">
+                    <h3 class="text-lg md:text-2xl font-bold text-white mb-2">سلطة الفواكة مع التوت البري</h3>
+                    <p class="text-gray-300 text-xs md:text-sm">ثورة غذائية جديدة تعزز الطاقة وتحسن الأداء الرياضي.</p>
+                </div>
+            </div>
+
+            <div data-category="lifestyle" class="article-card relative w-full h-[220px] md:h-[280px] rounded-2xl overflow-hidden group cursor-pointer shadow-lg border border-gray-800 transition-all duration-500">
+                <img src="images/diet-plan-fruit-salad.jpg" alt="سلطة الفواكة" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-black/60 to-transparent flex flex-col justify-end items-center pb-6 text-center px-4">
+                    <h3 class="text-lg md:text-2xl font-bold text-white mb-2">سلطة الفواكة مع التوت البري</h3>
+                    <p class="text-gray-300 text-xs md:text-sm">ثورة غذائية جديدة تعزز الطاقة وتحسن الأداء الرياضي.</p>
+                </div>
+            </div>
+
+            <div data-category="diet" class="article-card relative w-full h-[220px] md:h-[280px] rounded-2xl overflow-hidden group cursor-pointer shadow-lg border border-gray-800 transition-all duration-500">
+                <img src="images/diet-plan-fruit-salad.jpg" alt="سلطة الفواكة" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-black/60 to-transparent flex flex-col justify-end items-center pb-6 text-center px-4">
+                    <h3 class="text-lg md:text-2xl font-bold text-white mb-2">سلطة الفواكة مع التوت البري</h3>
+                    <p class="text-gray-300 text-xs md:text-sm">ثورة غذائية جديدة تعزز الطاقة وتحسن الأداء الرياضي.</p>
+                </div>
+            </div>
+
+            <div data-category="health" class="article-card relative w-full h-[220px] md:h-[280px] rounded-2xl overflow-hidden group cursor-pointer shadow-lg border border-gray-800 transition-all duration-500">
+                <img src="images/diet-plan-fruit-salad.jpg" alt="سلطة الفواكة" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-black/60 to-transparent flex flex-col justify-end items-center pb-6 text-center px-4">
+                    <h3 class="text-lg md:text-2xl font-bold text-white mb-2">سلطة الفواكة مع التوت البري</h3>
+                    <p class="text-gray-300 text-xs md:text-sm">ثورة غذائية جديدة تعزز الطاقة وتحسن الأداء الرياضي.</p>
+                </div>
+            </div>
+
+            <div data-category="nutrition" class="article-card relative w-full h-[220px] md:h-[280px] rounded-2xl overflow-hidden group cursor-pointer shadow-lg border border-gray-800 transition-all duration-500">
+                <img src="images/diet-plan-fruit-salad.jpg" alt="سلطة الفواكة" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-black/60 to-transparent flex flex-col justify-end items-center pb-6 text-center px-4">
+                    <h3 class="text-lg md:text-2xl font-bold text-white mb-2">سلطة الفواكة مع التوت البري</h3>
+                    <p class="text-gray-300 text-xs md:text-sm">ثورة غذائية جديدة تعزز الطاقة وتحسن الأداء الرياضي.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex items-center justify-center gap-3">
+            <button id="prev-page" class="text-[#FF5900] text-lg hover:text-white transition-colors cursor-pointer px-2 disabled:opacity-50 disabled:cursor-not-allowed">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            
+            <div class="flex gap-2" id="page-numbers">
+                </div>
+            
+            <button id="next-page" class="text-[#FF5900] text-lg hover:text-white transition-colors cursor-pointer px-2 disabled:opacity-50 disabled:cursor-not-allowed">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="scripts/ui/footer.js"></script>
+    <script src="scripts/ui/header.js"></script>
     <script src="scripts/api/news-api.js"></script>
     <script src="scripts/ui/health.js"></script>
 </body>
