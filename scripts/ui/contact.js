@@ -1,0 +1,66 @@
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // جلب العناصر من الواجهة
+    const submitBtn = document.getElementById('contactSubmitBtn');
+    const nameInput = document.getElementById('contactName');
+    const emailInput = document.getElementById('contactEmail');
+    const phoneInput = document.getElementById('contactPhone');
+    const messageInput = document.getElementById('contactMessage');
+
+    submitBtn.addEventListener('click', async (e) => {
+        e.preventDefault(); 
+
+        // 1. قراءة البيانات
+        const nameVal = nameInput.value.trim();
+        const emailVal = emailInput.value.trim();
+        const phoneVal = phoneInput.value.trim();
+        const messageVal = messageInput.value.trim();
+
+        // 2. التحقق من الواجهة (UI Validation)
+        if (nameVal.length < 3) {
+            alert("يرجى إدخال اسم صحيح (3 أحرف على الأقل).");
+            nameInput.focus();
+            return; 
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailVal)) {
+            alert("يرجى إدخال بريد إلكتروني صحيح.");
+            emailInput.focus();
+            return;
+        }
+
+        // 3. تجهيز البيانات للإرسال
+        const payload = {
+            name: nameVal,
+            email: emailVal,
+            phone: phoneVal, 
+            message_text: messageVal
+        };
+
+        // 4. تفاعل الواجهة: تغيير حالة الزر
+        submitBtn.innerText = "جاري الإرسال...";
+        submitBtn.disabled = true;
+
+        // 5. استدعاء الـ API من الملف الثاني
+        const response = await sendMessageToAPI(payload);
+
+        // 6. تفاعل الواجهة بناءً على رد السيرفر
+        if (response.success) {
+            alert("تم إرسال رسالتك بنجاح! شكراً لتواصلك معنا.");
+            
+            // تفريغ الحقول
+            nameInput.value = '';
+            emailInput.value = '';
+            phoneInput.value = '';
+            messageInput.value = '';
+        } else {
+            // إظهار الخطأ القادم من السيرفر أو من الـ Catch
+            alert("عذراً، فشل الإرسال: " + (response.data?.message || response.message));
+        }
+
+        // 7. إعادة الزر لحالته الطبيعية
+        submitBtn.innerText = "إرسال";
+        submitBtn.disabled = false;
+    });
+});

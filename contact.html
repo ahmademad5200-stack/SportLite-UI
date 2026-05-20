@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
+    <title>تواصل معنا</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -19,7 +19,6 @@
         <div class="h-[2px] flex-shrink w-12 sm:w-32 md:w-64 lg:w-80 bg-gradient-to-l from-[#FF5900] to-transparent rounded-full"></div>
     </div>
 
-
     <div class="w-full max-w-[1200px] mx-auto px-4 md:px-8 py-16">
         
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
@@ -28,29 +27,29 @@
                 
                 <div class="flex flex-col gap-2">
                     <label class="text-white text-sm font-bold text-right">الاسم الكامل</label>
-                    <input type="text" placeholder="ادخل اسمك هنا" 
+                    <input type="text" id="contactName" placeholder="ادخل اسمك هنا" 
                            class="w-full bg-[#242424] text-white placeholder-gray-500 border border-[#FF5900]/40 focus:border-[#FF5900] rounded-lg px-4 py-3 outline-none transition-colors">
                 </div>
                 
                 <div class="flex flex-col gap-2">
                     <label class="text-white text-sm font-bold text-right">البريد الالكتروني</label>
-                    <input type="email" placeholder="example@domain.com" dir="ltr"
+                    <input type="email" id="contactEmail" placeholder="example@domain.com" dir="ltr"
                            class="w-full bg-[#242424] text-white placeholder-gray-500 border border-[#FF5900]/40 focus:border-[#FF5900] rounded-lg px-4 py-3 outline-none transition-colors text-left">
                 </div>
                 
                 <div class="flex flex-col gap-2">
                     <label class="text-white text-sm font-bold text-right">رقم الهاتف</label>
-                    <input type="tel" placeholder="(+963) 0933333333" dir="ltr"
+                    <input type="tel" id="contactPhone" placeholder="(+963) 0933333333" dir="ltr"
                            class="w-full bg-[#242424] text-white placeholder-gray-500 border border-[#FF5900]/40 focus:border-[#FF5900] rounded-lg px-4 py-3 outline-none transition-colors text-left">
                 </div>
                 
                 <div class="flex flex-col gap-2">
                     <label class="text-white text-sm font-bold text-right">الموضوع</label>
-                    <textarea rows="4" placeholder="اكتب رسالتك هنا..." 
+                    <textarea id="contactMessage" rows="4" placeholder="اكتب رسالتك هنا..." 
                               class="w-full bg-[#242424] text-white placeholder-gray-500 border border-[#FF5900]/40 focus:border-[#FF5900] rounded-lg px-4 py-3 outline-none transition-colors resize-none"></textarea>
                 </div>
                 
-                <button class="w-full bg-[#FF5900] hover:bg-orange-600 text-white font-bold text-lg py-3.5 rounded-full transition-colors shadow-lg shadow-orange-500/20 mt-2">
+                <button id="contactSubmitBtn" class="w-full bg-[#FF5900] hover:bg-orange-600 text-white font-bold text-lg py-3.5 rounded-full transition-colors shadow-lg shadow-orange-500/20 mt-2">
                     إرسال
                 </button>
             </div>
