@@ -4,7 +4,7 @@
  */
 
 async function sendMessageToAPI(payload) {
-    const apiUrl = 'https://sportslite.app/api/v1/messages/create.php'; 
+    const apiUrl = 'https://sportslite.app/api/v1/messages/'; 
 
     try {
         const response = await fetch(apiUrl, {
