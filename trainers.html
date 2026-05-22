@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,433 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
-   
+    <div class="flex   items-center justify-between w-full min-h[80] bg-[#2C2C2C] px-4 md:px-10 mt-10]">
+        <div class="flex items-center gap-2 ">
+            <button type="submit"
+                class="text-[#fff] bg-[#DA6425] p-3 rounded-full border border-[#FF9500] w-28 hover:bg-[#FF9500] ">اشتراك</button>
+            <button type="submit"
+                class="text-[#FF9500] border border-[#FF9500] bg-[#121212] rounded-full p-3 m-4 text-sm">تسجيل
+                الدخول</button>
+        </div>
+        <div class="text-[#fff] items-center gap-6 hidden md:flex ">
+            <a class="hover:text-[#FF9500]">الرئيسيه</a>
+            <a class="hover:text-[#FF9500]">البرامج</a>
+            <a class="hover:text-[#FF9500]">المدربين<div class="w-15 h-1 bg-[#DA6425] rounded-sm"></div></a>
+            <a class="hover:text-[#FF9500]">الاجهزه</a>
+            <a class="hover:text-[#FF9500]">الاخبار</a>
+            <a class="hover:text-[#FF9500]">تواصل معنا </a>
+
+        </div>
+        <div class="flex flex-col items-end gap-2 order-1 md:order-3">
+            <div class="flex items-center gap-3">
+                <div class="text-right">
+                    <a href="#" class="text-[#fff] font-bold text-lg md:text-xl">Sport <span
+                            class="text-[#FF9500]">Lite</span></a>
+                </div>
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-[#DA6425] rounded-sm"></div>
+            </div>
+
+            <p class="text-end text-[#fff]  md:text-sm opacity-80">Transform Your Body</p>
+        </div>
+    </div>
+
+    <div class="min-h-screen bg-[#121212] flex flex-col text-white items-center pb-20">
+        <div class="flex items-center justify-center max-w-[732px] h-[40px] w-full mb-12 mt-10 px-4">
+            <div class="flex-grow h-[2px] bg-gradient-to-l from-orange-600 to-orange-500"></div>
+            <h1 class="px-8 text-xl md:text-2xl font-bold text-[#fff]">المدربين</h1>
+            <div class="flex-grow h-[2px] bg-gradient-to-l from-orange-600 to-orange-500"></div>
+
+        </div>
+
+        <div class=" mx-auto px-4 py-8 max-w-[1400px]">
+
+            <h1 class="text-center text-xl md:text-2xl font-bold mb-10 text-[#fff]">
+                اختر مدربك المناسب لبرنامجك التدريبي
+            </h1>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+
+                <div
+                    class="bg-[#2C2C2C] w-full max-w-[360px] md:max-w-[380px] border-2 border-r-[#FF9500] border-b-[#FF9500] border-t-transparent border-l-transparent rounded-2xl p-6 md:p-8 text-center transition-all duration-300 hover:shadow-lg hover:shadow-[#FF9500] flex flex-col justify-between min-h-[360px]">
+                    <div>
+                        <div class="flex items-center justify-center mb-4">
+                            <img src="images/trainer-portrait-clipboard.jpg"
+                                class="w-[120px] h-[120px] rounded-full object-cover border-2 border-[#FF9500]">
+                        </div>
+
+                        <h3 class="text-white text-lg md:text-xl font-bold mb-1">أحمد أقرع</h3>
+
+                        <div class="flex justify-center gap-1 text-[#FF9500] mb-2">
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                        </div>
+
+                        <p class="text-[#fff] text-sm mb-6">خبرة 3 سنوات</p>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-3 w-full mt-auto">
+                        <button type="button"
+                            class="text-white bg-[#DA6425] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm transition-all hover:bg-[#FF9500] ">
+                            حجز جلسة
+                        </button>
+                        <button type="button"
+                            class="text-[#FF9500] bg-[#121212] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm flex items-center justify-center gap-2 transition-all hover:bg-[#FF9500]">
+                            رسالة <i class="fa-brands fa-whatsapp "></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#2C2C2C] w-full max-w-[360px] md:max-w-[380px] border-2 border-r-[#FF9500] border-b-[#FF9500] border-t-transparent border-l-transparent rounded-2xl p-6 md:p-8 text-center transition-all duration-300 hover:shadow-lg hover:shadow-[#FF9500] flex flex-col justify-between min-h-[360px]">
+                    <div>
+                        <div class="flex items-center justify-center mb-4">
+                            <img src="images/trainer-portrait-clipboard.jpg"
+                                class="w-[120px] h-[120px] rounded-full object-cover border-2 border-[#FF9500]">
+                        </div>
+                        <h3 class="text-white text-lg md:text-xl font-bold mb-1">أحمد أقرع</h3>
+                        <div class="flex justify-center gap-1 text-[#FF9500] mb-2">
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                        </div>
+                        <p class="text-[#fff] text-sm mb-6">خبرة 3 سنوات</p>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 w-full mt-auto">
+                        <button type="button"
+                            class="text-white bg-[#DA6425] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm  transition-all hover:bg-[#FF9500] ">
+                            حجز جلسة
+                        </button>
+                        <button type="button"
+                            class="text-[#FF9500] bg-[#121212] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm  flex items-center justify-center gap-2 transition-all hover:bg-[#FF9500]">
+                            رسالة <i class="fa-brands fa-whatsapp "></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#2C2C2C] w-full max-w-[360px] md:max-w-[380px] border-2 border-r-[#FF9500] border-b-[#FF9500] border-t-transparent border-l-transparent rounded-2xl p-6 md:p-8 text-center transition-all duration-300 hover:shadow-lg hover:shadow-[#FF9500] flex flex-col justify-between min-h-[360px]">
+                    <div>
+                        <div class="flex items-center justify-center mb-4">
+                            <img src="images/trainer-portrait-clipboard.jpg"
+                                class="w-[120px] h-[120px] rounded-full object-cover border-2 border-[#FF9500]">
+                        </div>
+                        <h3 class="text-white text-lg md:text-xl font-bold mb-1">أحمد أقرع</h3>
+                        <div class="flex justify-center gap-1 text-[#FF9500] mb-2">
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                        </div>
+                        <p class="text-[#fff] text-sm mb-6">خبرة 3 سنوات</p>
+                    </div>
+                    <div class="flex items-center justify-center gap-3 w-full mt-auto">
+                        <button type="button"
+                            class="text-white bg-[#DA6425] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm  transition-all hover:bg-[#FF9500] ">
+                            حجز جلسة
+                        </button>
+                        <button type="button"
+                            class="text-[#FF9500] bg-[#121212] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm  flex items-center justify-center gap-2 transition-all hover:bg-[#FF9500]">
+                            رسالة <i class="fa-brands fa-whatsapp "></i>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div
+                    class="bg-[#2C2C2C] w-full max-w-[360px] md:max-w-[380px] border-2 border-r-[#FF9500] border-b-[#FF9500] border-t-transparent border-l-transparent rounded-2xl p-6 md:p-8 text-center transition-all duration-300 hover:shadow-lg hover:shadow-[#FF9500] flex flex-col justify-between min-h-[360px]">
+                    <div>
+                        <div class="flex items-center justify-center mb-4">
+                            <img src="images/trainer-portrait-clipboard.jpg"
+                                class="w-[120px] h-[120px] rounded-full object-cover border-2 border-[#FF9500]">
+                        </div>
+
+                        <h3 class="text-white text-lg md:text-xl font-bold mb-1">أحمد أقرع</h3>
+
+                        <div class="flex justify-center gap-1 text-[#FF9500] mb-2">
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                        </div>
+
+                        <p class="text-[#fff] text-sm mb-6">خبرة 3 سنوات</p>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-3 w-full mt-auto">
+                        <button type="button"
+                            class="text-white bg-[#DA6425] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm transition-all hover:bg-[#FF9500] ">
+                            حجز جلسة
+                        </button>
+                        <button type="button"
+                            class="text-[#FF9500] bg-[#121212] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm flex items-center justify-center gap-2 transition-all hover:bg-[#FF9500]">
+                            رسالة <i class="fa-brands fa-whatsapp "></i>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div
+                    class="bg-[#2C2C2C] w-full max-w-[360px] md:max-w-[380px] border-2 border-r-[#FF9500] border-b-[#FF9500] border-t-transparent border-l-transparent rounded-2xl p-6 md:p-8 text-center transition-all duration-300 hover:shadow-lg hover:shadow-[#FF9500] flex flex-col justify-between min-h-[360px]">
+                    <div>
+                        <div class="flex items-center justify-center mb-4">
+                            <img src="images/trainer-portrait-clipboard.jpg"
+                                class="w-[120px] h-[120px] rounded-full object-cover border-2 border-[#FF9500]">
+                        </div>
+
+                        <h3 class="text-white text-lg md:text-xl font-bold mb-1">أحمد أقرع</h3>
+
+                        <div class="flex justify-center gap-1 text-[#FF9500] mb-2">
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                        </div>
+
+                        <p class="text-[#fff] text-sm mb-6">خبرة 3 سنوات</p>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-3 w-full mt-auto">
+                        <button type="button"
+                            class="text-white bg-[#DA6425] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm transition-all hover:bg-[#FF9500] ">
+                            حجز جلسة
+                        </button>
+                        <button type="button"
+                            class="text-[#FF9500] bg-[#121212] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm  flex items-center justify-center gap-2 transition-all hover:bg-[#FF9500]">
+                            رسالة <i class="fa-brands fa-whatsapp "></i>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-[#2C2C2C] w-full max-w-[360px] md:max-w-[380px] border-2 border-r-[#FF9500] border-b-[#FF9500] border-t-transparent border-l-transparent rounded-2xl p-6 md:p-8 text-center transition-all duration-300 hover:shadow-lg hover:shadow-[#FF9500] flex flex-col justify-between min-h-[360px]">
+                    <div>
+                        <div class="flex items-center justify-center mb-4">
+                            <img src="images/trainer-portrait-clipboard.jpg"
+                                class="w-[120px] h-[120px] rounded-full object-cover border-2 border-[#FF9500]">
+                        </div>
+
+                        <h3 class="text-white text-lg md:text-xl font-bold mb-1">أحمد أقرع</h3>
+
+                        <div class="flex justify-center gap-1 text-[#FF9500] mb-2">
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                        </div>
+
+                        <p class="text-[#fff] text-sm mb-6">خبرة 3 سنوات</p>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-3 w-full mt-auto">
+                        <button type="button"
+                            class="text-white bg-[#DA6425] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm transition-all hover:bg-[#FF9500] ">
+                            حجز جلسة
+                        </button>
+                        <button type="button"
+                            class="text-[#FF9500] bg-[#121212] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm  flex items-center justify-center gap-2 transition-all hover:bg-[#FF9500]">
+                            رسالة <i class="fa-brands fa-whatsapp "></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#2C2C2C] w-full max-w-[360px] md:max-w-[380px] border-2 border-r-[#FF9500] border-b-[#FF9500] border-t-transparent border-l-transparent rounded-2xl p-6 md:p-8 text-center transition-all duration-300 hover:shadow-lg hover:shadow-[#FF9500] flex flex-col justify-between min-h-[360px]">
+                    <div>
+                        <div class="flex items-center justify-center mb-4">
+                            <img src="images/trainer-portrait-clipboard.jpg"
+                                class="w-[120px] h-[120px] rounded-full object-cover border-2 border-[#FF9500]">
+                        </div>
+
+                        <h3 class="text-white text-lg md:text-xl font-bold mb-1">أحمد أقرع</h3>
+
+                        <div class="flex justify-center gap-1 text-[#FF9500] mb-2">
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                        </div>
+
+                        <p class="text-[#fff] text-sm mb-6">خبرة 3 سنوات</p>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-3 w-full mt-auto">
+                        <button type="button"
+                            class="text-white bg-[#DA6425] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm  transition-all hover:bg-[#FF9500]">
+                            حجز جلسة
+                        </button>
+                        <button type="button"
+                            class="text-[#FF9500] bg-[#121212] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm  flex items-center justify-center gap-2 transition-all hover:bg-[#FF9500] ">
+                            رسالة <i class="fa-brands fa-whatsapp text-base"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div
+                    class="bg-[#2C2C2C] w-full max-w-[360px] md:max-w-[380px] border-2 border-r-[#FF9500] border-b-[#FF9500] border-t-transparent border-l-transparent rounded-2xl p-6 md:p-8 text-center transition-all duration-300 hover:shadow-lg hover:shadow-[#FF9500] flex flex-col justify-between min-h-[360px]">
+                    <div>
+                        <div class="flex items-center justify-center mb-4">
+                            <img src="images/trainer-portrait-clipboard.jpg"
+                                class="w-[120px] h-[120px] rounded-full object-cover border-2 border-[#FF9500]">
+                        </div>
+
+                        <h3 class="text-white text-lg md:text-xl font-bold mb-1">أحمد أقرع</h3>
+
+                        <div class="flex justify-center gap-1 text-[#FF9500] mb-2">
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                        </div>
+
+                        <p class="text-[#fff] text-sm mb-6">خبرة 3 سنوات</p>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-3 w-full mt-auto">
+                        <button type="button"
+                            class="text-white bg-[#DA6425] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm font-medium transition-all hover:bg-[#FF9500]">
+                            حجز جلسة
+                        </button>
+                        <button type="button"
+                            class="text-[#FF9500] bg-[#121212] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm font-medium flex items-center justify-center gap-2 transition-all hover:bg-[#FF9500] ">
+                            رسالة <i class="fa-brands fa-whatsapp text-base"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#2C2C2C] w-full max-w-[360px] md:max-w-[380px] border-2 border-r-[#FF9500] border-b-[#FF9500] border-t-transparent border-l-transparent rounded-2xl p-6 md:p-8 text-center transition-all duration-300 hover:shadow-lg hover:shadow-[#FF9500] flex flex-col justify-between min-h-[360px]">
+                    <div>
+                        <div class="flex items-center justify-center mb-4">
+                            <img src="images/trainer-portrait-clipboard.jpg"
+                                class="w-[120px] h-[120px] rounded-full object-cover border-2 border-[#FF9500]">
+                        </div>
+
+                        <h3 class="text-white text-lg md:text-xl font-bold mb-1">أحمد أقرع</h3>
+
+                        <div class="flex justify-center gap-1 text-[#FF9500] mb-2">
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                            <i class="fa-solid fa-star text-xs md:text-sm"></i>
+                        </div>
+
+                        <p class="text-[#fff] text-sm mb-6">خبرة 3 سنوات</p>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-3 w-full mt-auto">
+                        <button type="button"
+                            class="text-white bg-[#DA6425] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm font-medium transition-all hover:bg-[#FF9500] ">
+                            حجز جلسة
+                        </button>
+                        <button type="button"
+                            class="text-[#FF9500] bg-[#121212] py-2.5 px-4 rounded-full border border-[#FF9500] flex-1 text-sm font-medium flex items-center justify-center gap-2 transition-all hover:bg-[#FF9500]">
+                            رسالة <i class="fa-brands fa-whatsapp "></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-full min-h-[550px] bg-cover bg-center bg-[url('images/photo_2026-05-10_18-19-07.jpg')] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-10 text-right items-start justify-between p-10  "
+            dir="rtl">
+            <div class="min-w-[232px] h-[354px]  ">
+                <h1 class="text-[#D56D34] font-bold mb-4  text-right ">معلومات تواصل</h1>
+
+                <ul class="space-y-6">
+                    <li class="flex items-center gap-4">
+                        <i class="fa-solid fa-location-dot text-[#FF9500] w-6 text-center text-lg"></i>
+                        <span class="text-[#DA6425]">سوريا، حلب، المحافظة</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <i class="fa-solid fa-phone text-[#FF9500]   text-center text-lg"></i>
+                        <span class="text-[#DA6425]" dir="ltr">0963 933333333</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <i class="fa-solid fa-envelope text-[#FF9500] w-6 text-center text-lg"></i>
+                        <span class="text-[#DA6425]">SportsLite@gmail.com</span>
+                    </li>
+
+                </ul>
+                <div class=" gap-6  mt-16 ">
+                    <a href="#" class="text-[#FF9500] p-2 m-2 text-2xl hover:scale-110 transition"><i
+                            class="fa-brands fa-youtube  max-w-24 h-24 rounded-[2px] "></i></a>
+                    <a href="#" class="text-[#FF9500] p-2 m-2 text-2xl hover:scale-110 transition"><i
+                            class="fa-brands fa-instagram max-w-24 h-24 rounded-[2px]"></i></a>
+                    <a href="#" class="text-[#FF9500]  p-2 m-2 text-2xl hover:scale-110 transition"><i
+                            class="fa-brands fa-x-twitter max-w-24 h-24 rounded-[2px]"></i></a>
+                    <a href="#" class="text-[#FF9500]  p-2 m-2 text-2xl hover:scale-110 transition rounded-sm"><i
+                            class="fa-brands fa-square-facebook max-w-24 h-24 rounded-[2px]"></i></a>
+                </div>
+            </div>
+            <div class=" gap-30   min-w-[232px] h-[354px] ">
+                <h1 class="text-[#D56D34] font-bold mb-4   ">الدعم و التواصل</h1>
+                <ul class="space-y-6">
+                    <li class="mb-5"><span class="text-[#DA6425]">سياسة الخصوصية</span></li>
+                    <li class="mb-5"><span class="text-[#DA6425]">الاسئلة الشائعة</span></li>
+                    <li class="mb-5"><span class="text-[#DA6425]">الشروط والأحكام</span></li>
+                    <li class="mb-5"><span class="text-[#DA6425]">تواصل معنا</span></li>
+                </ul>
+            </div>
+
+            <div class="gap-[30px]   min-w-[232px] h-[354px]">
+                <h1 class="text-[#D56D34] font-bold mb-4  pace-y-6  ">الروابط السريعة</h1>
+                <ul class="space-y-6">
+                    <li><span class="text-[#DA6425]">الرئيسية</span></li>
+                    <li><span class="text-[#DA6425]">البرامج</span></li>
+                    <li><span class="text-[#DA6425]">المدربين</span></li>
+                    <li><span class="text-[#DA6425]">الاخبار</span></li>
+                </ul>
+            </div>
+            <div class="flex flex-col items-end  gap-2  md:order-3 max-[89px] h-[28px]">
+                <div class="flex items-center gap-3">
+                    <div class="text-right">
+                        <a href="#" class="text-[#fff] font-bold text-lg md:text-xl">Sport <span
+                                class="text-[#FF9500]">Lite</span></a>
+                    </div>
+                    <div class="w-8 h-8 md:w-10 md:h-10 bg-[#DA6425] rounded-sm"></div>
+                </div>
+
+                <p class="text-end text-[#fff]  md:text-sm opacity-80">Transform Your Body</p>
+                <p
+                    class="text-[#fff] max-w-[190px] max-h-[131] text-gray-300 leading-relaxed mt-16 text-jutify leading-relaxed  font-bold text-right">
+                    أكثر من مجرد نادي رياضي، نحن مجتمع يهتم بصحتك وقوتك. </p>
+
+            </div>
+
+        </div>
+
+        <div class="bg-[#121212] w-[257] h-[30pxpx] flex items-center justify-center py-4 ">
+            <img src="images/Copyright.png" alt="">
+            <p class="text-[#FF9500] text-center ">2026 جميع الحقوق محفوظة Sports Lite</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
     <script src="scripts/api/trainers-api.js"></script>
     <script src="scripts/ui/trainers.js"></script>
 </body>
+
 </html>
