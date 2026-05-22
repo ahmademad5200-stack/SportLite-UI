@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,255 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    
+    <div class="flex   items-center justify-between w-full min-h[80] bg-[#2C2C2C] px-4 md:px-10 mt-10]">
+        <div class="flex items-center gap-2 ">
+            <button type="submit"
+                class="text-[#fff] bg-[#DA6425] p-3 rounded-full border border-[#FF9500] w-28 hover:bg-[#FF9500] ">اشتراك</button>
+            <button type="submit"
+                class="text-[#FF9500] border border-[#FF9500] bg-[#121212] rounded-full p-3 m-4 text-sm">تسجيل
+                الدخول</button>
+        </div>
+        <div class="text-[#fff] items-center gap-6 hidden md:flex ">
+            <a class="hover:text-[#FF9500]">الرئيسيه</a>
+            <a class="hover:text-[#FF9500]">البرامج </a>
+            <a class="hover:text-[#FF9500]">المدربين</a>
+            <a class="hover:text-[#FF9500]">الاجهزه<div class="w-15 h-1 bg-[#DA6425] rounded-sm"></div></a>
+            <a class="hover:text-[#FF9500]">الاخبار</a>
+            <a class="hover:text-[#FF9500]">تواصل معنا </a>
 
+        </div>
+        <div class="flex flex-col items-end gap-2 order-1 md:order-3">
+            <div class="flex items-center gap-3">
+                <div class="text-right">
+                    <a href="#" class="text-[#fff] font-bold text-lg md:text-xl">Sport <span
+                            class="text-[#FF9500]">Lite</span></a>
+                </div>
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-[#DA6425] rounded-sm"></div>
+            </div>
+
+            <p class="text-end text-[#fff]  md:text-sm opacity-80">Transform Your Body</p>
+        </div>
+    </div>
+
+    <div class="min-h-screen bg-[#121212] flex flex-col text-white items-center pb-20">
+    <div class="flex items-center justify-center max-w-[732px] h-[40px] w-full mb-12 mt-10 px-4">
+        <div class="flex-grow h-[2px] bg-gradient-to-l from-[#FF9500] to-[#DA6425]"></div>
+        <h1 class="px-8 text-xl md:text-2xl font-bold text-white whitespace-nowrap">الأجهزة الرياضية</h1>
+        <div class="flex-grow h-[2px] bg-gradient-to-l from-[#FF9500] to-[#DA6425]"></div>
+    </div>
+
+           
+<div class="mx-auto px-4 py-8 max-w-[1400px]">
+    <div class="w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+        
+        <div class="relative w-full lg:w-80 order-1 lg:order-2">
+            <input type="text" placeholder="ابحث عن جهاز..."
+                class="w-full bg-[#2C2C2C] text-[#fff] rounded-lg pl-4 pr-10 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#FF9500] border border-transparent focus:border-transparent">
+            
+            <span class="absolute inset-y-0 left-2 flex items-center pr-3 text-gray-400">
+                <i class="fa-solid fa-search"></i>
+            </span>
+        </div>
+
+        <button class="w-full lg:w-auto bg-[#FF9500] hover:bg-[#DA6425] text-[#fff] px-6 py-2.5 rounded-full lg:min-w-[200px] text-sm font-bold transition-colors duration-200 shadow-md order-2 lg:order-1">
+            ابحث
+        </button>
+        
+    </div>
+
+    <div class="bg-[#2c2c2c]  my-6 mx-0 py-3 px-4 rounded-lg flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-gray-300">
+        
+        <div class="flex items-center gap-2 font-bold">
+            <span class="text-2xl">الجهاز قيد الصيانة</span>
+            <span class="w-[25px] h-[25px] rounded-full bg-[#D32F2F]"></span>
+        </div>
+        
+        <div class="flex items-center gap-2 font-bold">
+            <span class="text-2xl">الجهاز متاح</span>
+            <span class="w-[25px] h-[25px] rounded-full bg-[#2E7D32]"></span>
+        </div>
+        
+        <div class="flex items-center gap-2 font-bold">
+            <span class="text-2xl">الجهاز مستخدم</span>
+            <span class="w-[25px] h-[25px] rounded-full bg-[#F9A825]"></span>
+        </div>
+
+    </div>
+</div>
+<!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-[1200px] px-2 mb-10">
+    
+    <div class=" rounded-xl overflow-hidden   duration-300 hover:-translate-y-1 flex flex-col items-center p-4">
+        <div class="w-full rounded-lg p-2 flex justify-center items-center h-48 mb-4">
+            <img src="images/exercise-leg-press-machine.jpg" alt="جهاز رياضي" class="max-h-full object-contain mix-blend-multiply">
+        </div>
+        <h3 class="text-base font-bold text-center text-white mb-2">جهاز المشي الكهربائي</h3>
+        <div class="flex items-center gap-2 mb-4" dir="rtl">
+            <span class="w-3 h-3 rounded-full bg-[#2E7D32]"></span>
+            <span class="text-xs text-gray-400">عضلات القدمين والبطن</span>
+        </div>
+        <button class="w-full bg-[#FF9500] hover:bg-[#DA6425] text-white py-2 rounded-lg text-sm font-bold transition-colors">التفاصيل</button>
+    </div>
+
+    </div> -->
+
+
+     <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
+        
+        <div class="rounded-2xl overflow-hidden shadow-xl border border-transparent hover:border-[#FF9500]/30 transition-all group">
+            <div class=" flex items-center justify-center p-4 ">
+                <img src="images/exercise-leg-press-machine.jpg" alt="جهاز" class="max-h-full object-cover  group-hover:scale-105 transition-transform">
+            </div>
+            
+            <div class="p-5 text-center">
+                <h3 class=" bg-[#1E1E1E] text-lg font-bold mb-4">جهاز المشي الكهربائي</h3>
+                <div class=" bg-[#2c2c2c] flex items-center justify-between mb-6 px-4">
+                    <span class="text-sm text-gray-300">عضلات القدمين والبطن</span>
+                    <span class="w-4 h-4 rounded-full bg-[#2E7D32] shadow-[0_0_8px_rgba(22,163,74,0.6)]"></span>
+                    
+                </div>
+
+                <button class=" min-w-[120px] bg-[#FF9500] py-2.5 rounded-full font-bold hover:brightness-110 transition-all">
+                    التفاصيل
+                </button>
+            </div>
+        </div>
+
+        </div> -->
+
+<!-- <div class="bg-[#222222] rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between p-4 border border-gray-800/20 shadow-lg">
+    
+    <div class="w-full bg-[#1b1b1b] rounded-lg p-2 flex justify-center items-center h-48 mb-3">
+        <img src="images/exercise-leg-press-machine.jpg" alt="جهاز رياضي" class="max-h-full object-contain">
+    </div>
+    
+    <div class="w-full bg-[#181818] py-2 px-3 mb-3 rounded-md">
+        <h3 class="text-sm font-bold text-center text-white">جهاز المشي الكهربائي</h3>
+    </div>
+    
+    <div class="flex items-center gap-3 mb-4 w-full px-1" dir="rtl">
+        <span class="w-3 h-3 rounded-full bg-[#4CAF50] shrink-0"></span>
+        <span class="text-xs text-gray-300 font-medium">عضلات القدمين والبطن</span>
+    </div>
+    
+    <button class="w-full bg-[#FF5722] hover:bg-[#E64A19] text-white py-2.5 rounded-xl text-xs font-bold transition-colors tracking-wide">
+        التفاصيل
+    </button>
+</div> -->
+
+
+<!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-[1200px] px-4 mx-auto mb-10" dir="rtl">
+    
+    <div class="bg-[#232323] rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between p-4 max-w-[360px] w-full mx-auto shadow-xl border border-neutral-800/50">
+        
+        <div class="w-full bg-[#1b1b1b] rounded-lg p-4 flex justify-center items-center h-48 mb-3">
+            <img src="images/exercise-leg-press-machine.jpg" alt="جهاز رياضي" class="max-h-full object-contain">
+        </div>
+        
+        <div class="w-full bg-[#1a1a1a] py-2.5 px-3 mb-3 rounded-lg text-center">
+            <h3 class="text-sm font-bold text-white tracking-wide">جهاز المشي الكهربائي</h3>
+        </div>
+        
+        <div class="flex items-center gap-2 mb-4 w-full px-1">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#2E7D32] shrink-0"></span>
+            <span class="text-xs text-gray-300 font-medium">عضلات القدمين والبطن</span>
+        </div>
+        
+        <button class="w-full bg-[#FF5200] hover:bg-[#E64A00] text-white py-2.5 rounded-xl text-xs font-bold transition-colors shadow-lg shadow-orange-600/10">
+            التفاصيل
+        </button>
+    </div>
+
+    <div class="bg-[#232323] rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between p-4 max-w-[360px] w-full mx-auto shadow-xl border border-neutral-800/50">
+        <div class="w-full bg-[#1b1b1b] rounded-lg p-4 flex justify-center items-center h-48 mb-3">
+            <img src="images/exercise-leg-press-machine.jpg" alt="جهاز رياضي" class="max-h-full object-contain">
+        </div>
+        <div class="w-full bg-[#1a1a1a] py-2.5 px-3 mb-3 rounded-lg text-center">
+            <h3 class="text-sm font-bold text-white tracking-wide">جهاز المشي الكهربائي</h3>
+        </div>
+        <div class="flex items-center gap-2 mb-4 w-full px-1">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#FF9500] shrink-0"></span>
+            <span class="text-xs text-gray-300 font-medium">عضلات القدمين والبطن</span>
+        </div>
+        <button class="w-full bg-[#FF5200] hover:bg-[#E64A00] text-white py-2.5 rounded-xl text-xs font-bold transition-colors shadow-lg shadow-orange-600/10">
+            التفاصيل
+        </button>
+    </div>
+
+    <div class="bg-[#232323] rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between p-4 max-w-[360px] w-full mx-auto shadow-xl border border-neutral-800/50">
+        <div class="w-full bg-[#1b1b1b] rounded-lg p-4 flex justify-center items-center h-48 mb-3">
+            <img src="images/exercise-leg-press-machine.jpg" alt="جهاز رياضي" class="max-h-full object-contain">
+        </div>
+        <div class="w-full bg-[#1a1a1a] py-2.5 px-3 mb-3 rounded-lg text-center">
+            <h3 class="text-sm font-bold text-white tracking-wide">جهاز المشي الكهربائي</h3>
+        </div>
+        <div class="flex items-center gap-2 mb-4 w-full px-1">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#D32F2F] shrink-0"></span>
+            <span class="text-xs text-gray-300 font-medium">عضلات القدمين والبطن</span>
+        </div>
+        <button class="w-full bg-[#FF5200] hover:bg-[#E64A00] text-white py-2.5 rounded-xl text-xs font-bold transition-colors shadow-lg shadow-orange-600/10">
+            التفاصيل
+        </button>
+    </div>
+
+</div>
+ -->
+
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-[1200px] px-4 mx-auto mb-10" dir="rtl">
+    
+    <div class="bg-[#1a1a1a] rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between p-4 max-w-[350px] w-full mx-auto shadow-xl">
+        
+        <div class="w-full flex justify-center items-center h-48 mb-1">
+            <img src="images/exercise-leg-press-machine.jpg" alt="جهاز رياضي" class="max-h-full object-contain mix-blend-lighten">
+        </div>
+        
+        <div class="w-full bg-[#111111] py-2.5 px-3 mb-3 rounded-lg text-center">
+            <h3 class="text-sm font-bold text-white tracking-wide">جهاز المشي الكهربائي</h3>
+        </div>
+        
+        <div class="flex items-center gap-3 mb-4 w-full px-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#2E7D32] shrink-0"></span>
+            <span class="text-xs text-gray-300 font-medium">عضلات القدمين والبطن</span>
+        </div>
+        
+        <button class="w-full bg-[#FF5200] hover:bg-[#E64A00] text-white py-2.5 rounded-lg text-xs font-bold transition-colors">
+            التفاصيل
+        </button>
+    </div>
+
+    <div class="bg-[#1a1a1a] rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between p-4 max-w-[350px] w-full mx-auto shadow-xl">
+        <div class="w-full flex justify-center items-center h-48 mb-1">
+            <img src="images/exercise-leg-press-machine.jpg" alt="جهاز رياضي" class="max-h-full object-contain mix-blend-lighten">
+        </div>
+        <div class="w-full bg-[#111111] py-2.5 px-3 mb-3 rounded-lg text-center">
+            <h3 class="text-sm font-bold text-white tracking-wide">جهاز المشي الكهربائي</h3>
+        </div>
+        <div class="flex items-center gap-3 mb-4 w-full px-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#FF9500] shrink-0"></span>
+            <span class="text-xs text-gray-300 font-medium">عضلات القدمين والبطن</span>
+        </div>
+        <button class="w-full bg-[#FF5200] hover:bg-[#E64A00] text-white py-2.5 rounded-lg text-xs font-bold transition-colors">
+            التفاصيل
+        </button>
+    </div>
+
+    <div class="bg-[#1a1a1a] rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between p-4 max-w-[350px] w-full mx-auto shadow-xl">
+        <div class="w-full flex justify-center items-center h-48 mb-1">
+            <img src="images/exercise-leg-press-machine.jpg" alt="جهاز رياضي" class="max-h-full object-contain mix-blend-lighten">
+        </div>
+        <div class="w-full bg-[#111111] py-2.5 px-3 mb-3 rounded-lg text-center">
+            <h3 class="text-sm font-bold text-white tracking-wide">جهاز المشي الكهربائي</h3>
+        </div>
+        <div class="flex items-center gap-3 mb-4 w-full px-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#D32F2F] shrink-0"></span>
+            <span class="text-xs text-gray-300 font-medium">عضلات القدمين والبطن</span>
+        </div>
+        <button class="w-full bg-[#FF5200] hover:bg-[#E64A00] text-white py-2.5 rounded-lg text-xs font-bold transition-colors">
+            التفاصيل
+        </button>
+    </div>
+
+</div>
+        
     <script src="scripts/api/equipment-api.js"></script>
     <script src="scripts/ui/equipment.js"></script>
 </body>
